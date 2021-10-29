@@ -77,22 +77,22 @@ Author URL: http://w3layouts.com
                    
                 <form id="submit-form" class="main-input" name="form1" action="" autocomplete="off">
                     <div class="top-inputs d-grid">
-                        <input type="text" placeholder="Name" name="name" id="w3lName" onkeyup="return nameValidate()" required="" autocomplete="false">
+                        <input type="text" placeholder="Name" name="name" id="w3lName" onkeyup="return nameValidate()" autocomplete="false">
                         <div id="name-alert" style="margin-top: 10px; margin-left: 10px; color: red; display: none;" role="alert">
                           Please enter a valid name!
                         </div>
                     </div>
                     <div class="top-inputs d-grid">
-                      <input type="text" placeholder="Contact number" name="phone" id="w3lName" onkeyup="return phoneValidate()" required="" autocomplete="false">
+                      <input type="text" placeholder="Contact number" name="phone" id="w3lName" onkeyup="return phoneValidate()" autocomplete="false">
                       <div id="phone-alert" style="margin-top: 10px; margin-left: 10px; color: red; display: none;" role="alert">
                         Please enter a 10 digit phone number!
                       </div>
                   </div>
-                    <input type="email" name="email" placeholder="Email" id="w3lSender" onkeyup="return emailValidate()" required="" autocomplete="false">
+                    <input type="email" name="email" placeholder="Email" id="w3lSender" onkeyup="return emailValidate()" autocomplete="false">
                     <div id="email-alert" style="margin-top: 10px; margin-left: 10px; color: red; display: none;" role="alert">
                       Please enter a valid email address!
                     </div>
-                    <textarea placeholder="Message" name="message" id="w3lMessage" onkeyup="messageValidate()" required=""></textarea>
+                    <textarea placeholder="Message" name="message" id="w3lMessage" onkeyup="messageValidate()"></textarea>
                     <div id="message-alert" style="margin-top: -10px; margin-left: 10px; color: red; display: none;" role="alert">
                       Please enter a message!
                     </div>
@@ -170,13 +170,13 @@ Author URL: http://w3layouts.com
  <section class="w3l-footer-29-main" id="footer">
   <div class="footer-29 text-center">
     <div class="container">
-      
+     
       <div class="main-social-footer-29">
-        <a href="https://www.github.com/imabhisheknair/" class="facebook"><span class="fa fa-github"></span></a>
-        <a href="https://www.facebook.com/thisisabhisheknair/" class="facebook"><span class="fa fa-facebook"></span></a>
-        <a href="https://www.twitter.com/iabhisheknair/" class="twitter"><span class="fa fa-twitter"></span></a>
-        <a href="https://www.instagram.com/imabhisheknair/" class="instagram"><span class="fa fa-instagram"></span></a>
-        <a href="https://www.linkedin.com/in/imabhisheknair/" class="linkedin"><span class="fa fa-linkedin"></span></a>
+        <a href="https://www.github.com/imabhisheknair/" target="_blank" class="facebook"><span class="fa fa-github"></span></a>
+        <a href="https://www.facebook.com/thisisabhisheknair/" target="_blank" class="facebook"><span class="fa fa-facebook"></span></a>
+        <a href="https://www.twitter.com/iabhisheknair/" target="_blank" class="twitter"><span class="fa fa-twitter"></span></a>
+        <a href="https://www.instagram.com/imabhisheknair/" target="_blank" class="instagram"><span class="fa fa-instagram"></span></a>
+        <a href="https://www.linkedin.com/in/imabhisheknair/" target="_blank" class="linkedin"><span class="fa fa-linkedin"></span></a>
     </div>
         <div class="bottom-copies text-center">
             <p class="copy-footer-29">© 2021 Abhishek AV | All rights reserved </p>
@@ -251,6 +251,7 @@ Author URL: http://w3layouts.com
     var name = document.form1.name.value;
     if(name == "" || /\d/.test(document.form1.name.value)){
       document.getElementById("name-alert").style.display="block";
+      return false;
     } else {
       document.getElementById("name-alert").style.display="none";
     }
@@ -258,6 +259,7 @@ Author URL: http://w3layouts.com
     var phone = document.form1.phone.value;
     if(!(document.form1.phone.value.match(/^\d{10}$/))){
       document.getElementById("phone-alert").style.display="block";
+      return false;
     } else {
       document.getElementById("phone-alert").style.display="none";
     }
@@ -265,6 +267,7 @@ Author URL: http://w3layouts.com
     var email = document.form1.email.value;
     if(email == "" || !(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(form1.email.value))){
       document.getElementById("email-alert").style.display="block";
+      return false;
     } else {
       document.getElementById("email-alert").style.display="none";
     }
@@ -272,6 +275,7 @@ Author URL: http://w3layouts.com
     var message = document.form1.message.value;
     if(message == ""){
       document.getElementById("message-alert").style.display="block";
+      return false;
     } else {
       document.getElementById("message-alert").style.display="none";
     }
