@@ -97,6 +97,10 @@ Author URL: http://w3layouts.com
                       Please enter a message!
                     </div>
                     <div class="text-right">
+                      <div>
+                        <span id="loading" style="color: blue; display: none;">Sending...</span>
+                        <span id="success" style="color: green; display: none;">Message sent! Thank you for contacting me.</span>
+                      </div>
                         <button type="submit" onclick="return validate()" class="btn btn-theme2">Submit Now</button>
                         
                     </div>
@@ -289,14 +293,15 @@ Author URL: http://w3layouts.com
 <!-- Smooth scrolling -->
  <script>
         $("#submit-form").submit((e)=>{
+            document.getElementById("loading").style.display="block";
             e.preventDefault()
             $.ajax({
                 url:"https://script.google.com/macros/s/AKfycbwiwee73i_Puflg7z3uCpDd0jKjvkTmlm6aMhBGw6IwVbQ1eWo/exec",
                 data:$("#submit-form").serialize(),
                 method:"post",
                 success:function (response){
-                    alert("Contact form submitted successfully.")
-                    window.location.reload()
+                    document.getElementById("success").style.display="block";
+                    document.getElementById("loading").style.display="none";
                     //window.location.href="https://google.com"
                 },
                 error:function (err){
