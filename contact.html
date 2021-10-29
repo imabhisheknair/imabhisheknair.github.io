@@ -203,6 +203,10 @@ Author URL: http://w3layouts.com
       alert('Please enter your name!');
       return false;
     }
+    if(/\d/.test(document.form1.name.value)){
+      alert('Please enter valid name!');
+      return false;
+    }
     var email = document.form1.email.value;
     if(email == ""){
       alert('Please provide your email address');
