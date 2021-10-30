@@ -453,6 +453,7 @@ Author URL: http://w3layouts.com
     }
 
     var message = document.form1.message.value;
+    message = message.trim();
     if(message == ""){
       document.getElementById("message-alert").style.display="block";
       return false;
