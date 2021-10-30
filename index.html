@@ -541,6 +541,7 @@ Author URL: http://w3layouts.com
           success:function (response){
               document.getElementById("success").style.display="block";
               document.getElementById("loading").style.display="none";
+              $("#submit-form")[0].reset();
               //window.location.href="https://google.com"
           },
           error:function (err){
