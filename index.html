@@ -101,7 +101,7 @@ Author URL: http://w3layouts.com
           <p class="mb-0">I've pursued my bachelor's degree in computer applications from bengaluru city university in 2021. I started my career as an intern at packapeer academy.</p>
           <p class="mb-0">I'm curious, and I enjoy work that challenges me to learn something new and stretch in a diffrent direction. I do my best to stay on top of changes in the state of the art so that i can meet challenges with well suited to my career.</p>
          
-					<a href="services.html" class="btn-theme2 btn mt-lg-5 mt-4">Hire Me</a>
+					<a href="#services" class="btn-theme2 btn mt-lg-5 mt-4">Hire Me</a>
 				</div>
 			</div>
 		</div>
@@ -441,6 +441,7 @@ Author URL: http://w3layouts.com
     }
 
     var email = document.form1.email.value;
+    email = email.trim();
     if(email == "" || !(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(form1.email.value))){
       document.getElementById("email-alert").style.display="block";
       return false;
