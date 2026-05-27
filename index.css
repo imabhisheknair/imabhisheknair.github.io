@@ -117,6 +117,8 @@ h1 {
     font-size: 1.5rem;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     text-decoration: none;
+    flex-shrink: 0;
+    /* Prevent stretching */
 }
 
 .social-link:hover {
@@ -141,6 +143,7 @@ h1 {
     transition: all 0.3s ease;
     border: 1px solid var(--accent-primary);
     margin-left: 0.5rem;
+    white-space: nowrap;
 }
 
 .resume-btn:hover {
@@ -176,7 +179,23 @@ h1 {
     }
 
     .content-card {
-        padding: 2.5rem;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .social-links {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .resume-btn {
+        margin-left: 0;
+        width: 100%;
+        margin-top: 1rem;
     }
 
     h1 {
