@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <!-- Background -->
+  <rect width="32" height="32" rx="5" fill="#1e1e2e"/>
+  <!-- Blue snake (Python top) -->
+  <path d="M 8,9 Q 16,9 16,15 Q 16,20 22,20"
+        fill="none" stroke="#4B8BBE" stroke-width="4" stroke-linecap="round"/>
+  <!-- Yellow snake (Python bottom) -->
+  <path d="M 24,23 Q 16,23 16,17 Q 16,12 10,12"
+        fill="none" stroke="#FFD43B" stroke-width="4" stroke-linecap="round"/>
+  <!-- Blue head -->
+  <circle cx="8" cy="9" r="3" fill="#4B8BBE"/>
+  <!-- Yellow head -->
+  <circle cx="24" cy="23" r="3" fill="#FFD43B"/>
+</svg>
