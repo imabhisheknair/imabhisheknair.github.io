@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Abhishek A V - Backend Developer Portfolio">
+    <title>Abhishek A V | Backend Software Engineer</title>
+    <meta name="description" content="Abhishek A V - Backend Software Engineer building production web platforms with Python, Django, PostgreSQL and AWS. Sole developer of SurelyRemote, acquired by Toptal in 2026.">
     <meta name="author" content="Abhishek A V">
     <link rel="shortcut icon" href="assets/images/favicon.svg" type="image/x-icon">
-    <meta name="description" content="Abhishek A V - Python Backend Developer specializing in scalable APIs, automation, backend systems, and server-side solutions.">
 
-<!-- Open Graph -->
+    <!-- Open Graph -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Abhishek A V | Python Backend Developer">
-    <meta property="og:description" content="Python Backend Developer specializing in scalable APIs, automation, and backend systems.">
+    <meta property="og:title" content="Abhishek A V | Backend Software Engineer">
+    <meta property="og:description" content="Backend Software Engineer building production web platforms with Python, Django, PostgreSQL and AWS.">
     <meta property="og:url" content="https://abhishekav.is-a.dev">
     <meta property="og:site_name" content="Abhishek A V">
     <meta property="og:image" content="https://abhishekav.is-a.dev/assets/images/og-image.png">
@@ -20,61 +20,207 @@
 
     <!-- Twitter / X -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Abhishek A V | Python Backend Developer">
-    <meta name="twitter:description" content="Python Backend Developer specializing in scalable APIs, automation, and backend systems.">
+    <meta name="twitter:title" content="Abhishek A V | Backend Software Engineer">
+    <meta name="twitter:description" content="Backend Software Engineer building production web platforms with Python, Django, PostgreSQL and AWS.">
     <meta name="twitter:image" content="https://abhishekav.is-a.dev/assets/images/og-image.png">
 
     <!-- Theme -->
-    <meta name="theme-color" content="#f8fafc">
+    <meta name="theme-color" content="#0E1012">
+    <meta name="color-scheme" content="dark">
     <meta name="robots" content="index, follow">
-    <meta name="author" content="Abhishek A V">
 
     <!-- Canonical URL -->
     <link rel="canonical" href="https://abhishekav.is-a.dev">
 
-    <title>Abhishek A V</title>
-    
-    <!-- Font Awesome for Social Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- Custom CSS -->
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500&display=swap">
+
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
 
-    <div class="container">
-        <!-- Left Column: Character Illustration -->
-        <div class="left-col">
-            <img src="assets/images/dev_character_2.png" alt="Backend Developer Illustration">
+    <!-- Icon sprite -->
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+        <symbol id="i-download" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="M7 10l5 5 5-5"/><path d="M12 15V3"/></symbol>
+        <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 6L2 7"/></symbol>
+        <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></symbol>
+        <symbol id="i-github" viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></symbol>
+        <symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></symbol>
+    </svg>
+
+    <header class="site-header">
+        <div class="wrap header-inner">
+            <a href="#top" class="brand" aria-label="Abhishek A V, home">
+                <span class="monogram">AV</span>
+                <span class="brand-url">abhishekav.is-a.dev</span>
+            </a>
+            <nav class="nav" aria-label="Primary">
+                <a href="#work" class="nav-link">Work</a>
+                <a href="#now" class="nav-link">Now</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <a href="Abhishek_AV_CV.pdf" class="btn btn-outline btn-sm" target="_blank" rel="noopener">
+                    <svg class="icon" aria-hidden="true"><use href="#i-download"/></svg>
+                    Résumé
+                </a>
+            </nav>
         </div>
+    </header>
 
-        <!-- Right Column: Personal Information -->
-        <div class="right-col">
-            <div class="content-card">
-                <h1>Abhishek A V</h1>
-                <p class="tagline">Python Backend Developer</p>
-                <p class="summary">
-                    Architecting robust backend systems and scalable APIs with Python. 
-                    Focused on performance, security, and building efficient server-side solutions.
-                </p>
+    <main id="top">
 
-                <div class="social-links">
-                    <a href="https://github.com/imabhisheknair/" target="_blank" class="social-link" title="GitHub">
-                        <i class="fab fa-github"></i>
+        <section class="wrap hero">
+            <p class="eyebrow">
+                <span class="dot" aria-hidden="true"></span>
+                Backend Software Engineer
+                <span class="sep" aria-hidden="true">/</span>
+                Python · Django · AWS
+            </p>
+            <h1 class="hero-name">Abhishek A V</h1>
+            <p class="hero-lede">I build and maintain production web platforms in Python, Django, PostgreSQL and AWS. Sole developer of SurelyRemote, a remote-job platform <strong>acquired by Toptal in 2026</strong>.</p>
+            <div class="hero-actions">
+                <a href="Abhishek_AV_CV.pdf" class="btn btn-primary" target="_blank" rel="noopener">
+                    <svg class="icon" aria-hidden="true"><use href="#i-download"/></svg>
+                    Download CV
+                </a>
+                <a href="mailto:abhishekaikkodan@gmail.com" class="btn btn-outline">
+                    <svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg>
+                    Get in touch
+                </a>
+                <div class="socials">
+                    <a href="https://github.com/imabhisheknair/" class="icon-link" aria-label="GitHub" target="_blank" rel="noopener">
+                        <svg class="icon icon-lg" aria-hidden="true"><use href="#i-github"/></svg>
                     </a>
-                    <a href="https://linkedin.com/in/abhishekaikkodan/" target="_blank" class="social-link" title="LinkedIn">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <a href="https://instagram.com/imabhishekav/" target="_blank" class="social-link" title="Instagram">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="mailto:abhishekaikkodan@gmail.com" class="resume-btn" title="Send Message">
-                        <i class="fas fa-envelope"></i> Send Message
+                    <a href="https://linkedin.com/in/abhishekaikkodan/" class="icon-link" aria-label="LinkedIn" target="_blank" rel="noopener">
+                        <svg class="icon icon-lg" aria-hidden="true"><use href="#i-linkedin"/></svg>
                     </a>
                 </div>
             </div>
+        </section>
+
+        <section class="stats-band" aria-label="Highlights">
+            <div class="wrap stats">
+                <div class="stat">
+                    <p class="stat-value">4+ <span class="stat-unit">yrs</span></p>
+                    <p class="stat-label">Shipping and running production backends</p>
+                </div>
+                <div class="stat">
+                    <p class="stat-value">17,000+</p>
+                    <p class="stat-label">Active jobs served on SurelyRemote</p>
+                </div>
+                <div class="stat">
+                    <p class="stat-value">200+ <span class="stat-unit">/ day</span></p>
+                    <p class="stat-label">New postings ingested by automated pipelines</p>
+                </div>
+                <div class="stat">
+                    <p class="stat-value stat-accent">2026</p>
+                    <p class="stat-label">SurelyRemote acquired by Toptal LLC</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="work" class="wrap work">
+            <div class="section-head">
+                <h2 class="section-title">Selected work</h2>
+                <p class="mono-note">Sole developer, end to end</p>
+            </div>
+
+            <article class="project">
+                <div class="project-meta">
+                    <h3 class="project-name">
+                        <a href="https://surelyremote.com" target="_blank" rel="noopener">SurelyRemote
+                            <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>
+                        </a>
+                    </h3>
+                    <p class="mono-note">Remote job platform · 2023 – present</p>
+                </div>
+                <div class="project-body">
+                    <p>Built and ran the whole platform alone, from scraping to payments. Python pipelines pull listings from Workday, Greenhouse and Lever, then use LLMs to enrich, deduplicate and validate them before they go live. Stripe billing, conversion tracking and PostHog A/B tests on top. Acquired by Toptal in September 2026.</p>
+                    <div class="pipeline" tabindex="0" aria-label="Job ingestion pipeline">
+                        <p class="pipeline-flow">
+                            <span>Workday · Greenhouse · Lever</span>
+                            <span class="arrow" aria-hidden="true">→</span>
+                            <span>LLM enrich</span>
+                            <span class="arrow" aria-hidden="true">→</span>
+                            <span>dedupe</span>
+                            <span class="arrow" aria-hidden="true">→</span>
+                            <span>validate</span>
+                            <span class="arrow" aria-hidden="true">→</span>
+                            <span>Google Cloud Talent API</span>
+                            <span class="arrow" aria-hidden="true">→</span>
+                            <span class="pipeline-end">live listings</span>
+                        </p>
+                    </div>
+                    <ul class="tags" aria-label="Stack">
+                        <li>Django</li>
+                        <li>PostgreSQL</li>
+                        <li>Celery</li>
+                        <li>Selenium</li>
+                        <li>OpenAI API</li>
+                        <li>Stripe</li>
+                        <li>AWS</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="project">
+                <div class="project-meta">
+                    <h3 class="project-name">
+                        <a href="https://jobswagon.com" target="_blank" rel="noopener">Jobswagon
+                            <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>
+                        </a>
+                    </h3>
+                    <p class="mono-note">AI résumé builder</p>
+                </div>
+                <div class="project-body">
+                    <p>An AI-assisted résumé builder written in Python and Django. It generates résumé content with AI and renders it to PDF on demand.</p>
+                    <ul class="tags" aria-label="Stack">
+                        <li>Django</li>
+                        <li>LLM APIs</li>
+                        <li>PDF generation</li>
+                    </ul>
+                </div>
+            </article>
+        </section>
+
+        <section id="now" class="wrap now">
+            <div>
+                <p class="kicker">Now</p>
+                <p class="now-text"><strong>Independent contractor to Toptal LLC.</strong> I'm handling SurelyRemote's engineering handover after the acquisition: production maintenance, Stripe and PostHog work, and Docker-based CI/CD.</p>
+            </div>
+            <div>
+                <p class="kicker">Toolbox</p>
+                <dl class="toolbox">
+                    <dt>Backend</dt>
+                    <dd>Python, Django, REST APIs, Celery, PostgreSQL</dd>
+                    <dt>Infra</dt>
+                    <dd>AWS (EC2, RDS, S3, Lambda), Docker, Nginx, Gunicorn, GitHub Actions</dd>
+                    <dt>Integrations</dt>
+                    <dd>OpenAI / LLM APIs, Stripe, PostHog, Selenium, Honeybadger</dd>
+                </dl>
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="contact" class="site-footer">
+        <div class="wrap footer-inner">
+            <p class="kicker">Contact</p>
+            <h2 class="footer-title">Need a backend that keeps running? Let's talk.</h2>
+            <a href="mailto:abhishekaikkodan@gmail.com" class="footer-email">abhishekaikkodan@gmail.com
+                <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>
+            </a>
+            <div class="footer-bar">
+                <span>© 2026 Abhishek A V</span>
+                <nav class="footer-links" aria-label="Elsewhere">
+                    <a href="https://github.com/imabhisheknair/" target="_blank" rel="noopener">GitHub</a>
+                    <a href="https://linkedin.com/in/abhishekaikkodan/" target="_blank" rel="noopener">LinkedIn</a>
+                    <a href="Abhishek_AV_CV.pdf" target="_blank" rel="noopener">Résumé (PDF)</a>
+                </nav>
+            </div>
         </div>
-    </div>
+    </footer>
 
 </body>
 </html>
